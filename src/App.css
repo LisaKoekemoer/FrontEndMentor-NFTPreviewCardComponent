@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+body {
+  background-color: #0D192C;
+  font-family: "Outfit", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-component {
+  margin: auto;
+  margin-top: 20vh;
+  background-color: #15263F;
+  width: 350px;
+  height: 596px;
+  border-radius: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.equilibrium {
+  position: relative;
+  width: 302px;
+  height: 302px;
+  border-radius: 15px;
+  margin: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.absolute-view {
+  display: none;
+}
+
+.equilibrium:hover + .absolute-view {
+  display: block;
+  position: absolute;
+  background-color: #00FFF880;
+  width: 302px;
+  height: 302px;
+  align-content: center;
+  border-radius: 15px;
+  top: 210px;
+  left: 810px;
+}
+
+.view {
+  margin-left: 130px;
+}
+
+.card-component h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: -10px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.card-component h2:hover {
+  color: #00FFF8;
+  cursor: pointer;
+}
+
+.card-component p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #8BACD9;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.nft-info {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.ETH {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ETH img {
+  width: 11px;
+  height: 18px;
+  margin-right: -12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ETH p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00FFF8;
 }
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.time img {
+  width: 16px;
+  height: 16px;
+}
+
+.time p {
+  font-size: 16px;
+  color: #8BACD9;
+  margin-left: 5px;
+}
+
+hr {
+  margin-left: 24px;
+  margin-right: 24px;
+  border-color: #979797;
+  height: 0px;
+}
+
+.artist-info {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.artist-info img {
+  width: 33px;
+  height: 33px;
+}
+
+.artist-info p {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #8BACD9;
+}
+
+.artist-info span {
+  color: #FFFFFF;
+}
+
+.artist-info span:hover{
+  color: #00FFF8;
+  cursor: pointer;
+}
+
